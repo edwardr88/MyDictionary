@@ -2,8 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-apply plugin: 'com.huawei.agconnect'
-
 android {
     compileSdk 31
 
@@ -37,8 +35,4 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'com.huawei.agconnect:agconnect-core:1.6.2.300'
-    implementation 'com.huawei.hms:hwid:6.3.0.301'
-    implementation 'com.huawei.hms:ads-lite:13.4.32.300'
-    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
 }
