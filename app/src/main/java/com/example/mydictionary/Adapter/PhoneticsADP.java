@@ -43,7 +43,7 @@ public class PhoneticsADP extends RecyclerView.Adapter<PhoneticVH>{
                 MediaPlayer mediaPlayer = new MediaPlayer();
                 try {
                     mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                    mediaPlayer.setDataSource("https:" + phoneticList.get(position).getAudioDic());
+                    mediaPlayer.setDataSource("https:" + phoneticList.get(holder.getAdapterPosition()).getAudioDic());
                     mediaPlayer.prepare();
                     mediaPlayer.start();
                 } catch (Exception e){
