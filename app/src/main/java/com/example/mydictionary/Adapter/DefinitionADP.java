@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mydictionary.Models.Definition;
+import com.example.mydictionary.Models.Definitions;
 import com.example.mydictionary.R;
 import com.example.mydictionary.ViewHolders.DefinitionVH;
 
@@ -16,11 +16,11 @@ import java.util.List;
 public class DefinitionADP extends RecyclerView.Adapter<DefinitionVH>{
 
     private Context ctx;
-    private List<Definition> definitionList;
+    private List<Definitions> definitionsList;
 
-    public DefinitionADP(Context ctx, List<Definition> definitionList) {
+    public DefinitionADP(Context ctx, List<Definitions> definitionsList) {
         this.ctx = ctx;
-        this.definitionList = definitionList;
+        this.definitionsList = definitionsList;
     }
 
     @NonNull
@@ -32,13 +32,13 @@ public class DefinitionADP extends RecyclerView.Adapter<DefinitionVH>{
 
     @Override
     public void onBindViewHolder(@NonNull DefinitionVH holder, int position) {
-        holder.txtDefinition.setText("Translate: " + definitionList.get(position).getDefinition());
-        holder.txtExample.setText("Example: " + definitionList.get(position).getExample());
+        holder.txtDefinition.setText("Translate: " + definitionsList.get(position).getDefinition());
+        holder.txtExample.setText("Example: " + definitionsList.get(position).getExample());
         StringBuilder synonyms = new StringBuilder();
         StringBuilder antonyms = new StringBuilder();
 
-        synonyms.append(definitionList.get(position).getSynonyms());
-        antonyms.append(definitionList.get(position).getAntonyms());
+        synonyms.append(definitionsList.get(position).getSynonyms());
+        antonyms.append(definitionsList.get(position).getAntonyms());
 
         holder.txtSynonyms.setText(synonyms);
         holder.txtAntonyms.setText(antonyms);

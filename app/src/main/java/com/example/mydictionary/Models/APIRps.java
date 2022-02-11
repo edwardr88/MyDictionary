@@ -5,7 +5,7 @@ import java.util.List;
 public class APIRps {
     String word = "";
     List<Phonetics> phonetics = null;
-    List<Means> meanings = null;
+    List<Meanings> meanings = null;
 
     public String getWord() {
         return word;
@@ -23,11 +23,11 @@ public class APIRps {
         this.phonetics = phonetics;
     }
 
-    public List<Means> getMeanings() {
+    public List<Meanings> getMeanings() {
         return meanings;
     }
 
-    public void setMeanings(List<Means> meanings) {
+    public void setMeanings(List<Meanings> meanings) {
         this.meanings = meanings;
     }
 }

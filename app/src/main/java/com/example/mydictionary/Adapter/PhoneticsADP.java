@@ -36,14 +36,14 @@ public class PhoneticsADP extends RecyclerView.Adapter<PhoneticVH>{
 
     @Override
     public void onBindViewHolder(@NonNull PhoneticVH holder, int position) {
-        holder.txtPhonetic.setText(phoneticList.get(position).getTxtDic());
+        holder.txtPhonetic.setText(phoneticList.get(position).getText());
         holder.buttonAudio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MediaPlayer mediaPlayer = new MediaPlayer();
                 try {
                     mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                    mediaPlayer.setDataSource("https:" + phoneticList.get(holder.getAdapterPosition()).getAudioDic());
+                    mediaPlayer.setDataSource("https:" + phoneticList.get(holder.getAdapterPosition()).getAudio());
                     mediaPlayer.prepare();
                     mediaPlayer.start();
                 } catch (Exception e){

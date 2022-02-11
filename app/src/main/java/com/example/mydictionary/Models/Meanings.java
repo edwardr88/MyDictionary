@@ -2,9 +2,9 @@ package com.example.mydictionary.Models;
 
 import java.util.List;
 
-public class Means {
+public class Meanings {
     String partOfSpeech = "";
-    List<Definition> definitions = null;
+    List<Definitions> definitions = null;
 
     public String getPartOfSpeech() {
         return partOfSpeech;
@@ -14,11 +14,11 @@ public class Means {
         this.partOfSpeech = partOfSpeech;
     }
 
-    public List<Definition> getDefinitions() {
+    public List<Definitions> getDefinitions() {
         return definitions;
     }
 
-    public void setDefinitions(List<Definition> definitions) {
+    public void setDefinitions(List<Definitions> definitions) {
         this.definitions = definitions;
     }
 }

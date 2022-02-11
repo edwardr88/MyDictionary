@@ -1,12 +1,13 @@
 package com.example.mydictionary;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.widget.SearchView;
+//import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 

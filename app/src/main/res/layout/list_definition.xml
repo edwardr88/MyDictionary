@@ -42,7 +42,7 @@
             android:textColor="@color/black"
             android:textAlignment="center"
             android:padding="10dp"
-            android:text="Synonims"
+            android:text="Synonyms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

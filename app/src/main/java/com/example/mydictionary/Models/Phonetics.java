@@ -1,22 +1,22 @@
 package com.example.mydictionary.Models;
 
 public class Phonetics {
-    String txtDic = "";
-    String audioDic = "";
+    String text = "";
+    String audio = "";
 
-    public String getTxtDic() {
-        return txtDic;
+    public String getText() {
+        return text;
     }
 
-    public void setTxtDic(String txtDic) {
-        this.txtDic = txtDic;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public String getAudioDic() {
-        return audioDic;
+    public String getAudio() {
+        return audio;
     }
 
-    public void setAudioDic(String audioDic) {
-        this.audioDic = audioDic;
+    public void setAudio(String audio) {
+        this.audio = audio;
     }
 }
